@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <title>{{ title }} - 暴走冷蔵庫</title>
     </head>
     <style>
         header {
@@ -34,10 +35,53 @@
         #menu {
             list-style-type: none;
         }
+        #welcome{
+            animation: rainbow 2.5s linear;
+		    animation-iteration-count: infinite;
+            font-weight: bold;
+        }
+        @keyframes rainbow{
+		100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}
     </style>
     <body>
         <header>
-            <marquee behavior="alternate">暴走冷蔵庫へようこそ</marquee>
+            <marquee behavior="alternate" id="welcome">暴走冷蔵庫へようこそ</marquee>
         </header>
         <div id="container">
             <nav>
@@ -50,11 +94,19 @@
             <a href="./page4.html">■</a>
                     </li>
                 </ul>
+                <div>以下18禁</div>
+                <ul id="menu">
+                    <li>
+                        <a href="./index.html">■</a>
+                        <a href="./page1.html">■</a>
+                        <a href="./page2.html">■</a>
+                        <a href="./page3.html">■</a>
+                        <a href="./page4.html">■</a>
+                    </li>
+                </ul>
             </nav>
             <main>
-            
-              <h1>工事中</h1>
-
+                {{ content }}
             </main>
         </div>
 
@@ -64,8 +116,12 @@
         <footer>
             あなたは<a href="https://www.free-counter.jp/"><img src="https://www.f-counter.net/j/45/1620301571/" alt="アクセスカウンター"></a>
             人目のお客様です
-            
+
             <p><a href="https://github.com/rampaging-fridge/rampaging-fridge.github.io">ギットハブ</a></p>
+            <div id="links">
+                <a href="https://www.nicovideo.jp/user/9266146"><img src="img/djmonad.gif"></a>
+                <a href="https://sakazuki.herokuapp.com/"><img src="img/sakazuki.gif"></a>
+            </div>
         </footer>
     </body>
 </html>
