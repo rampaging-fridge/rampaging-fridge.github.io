@@ -55,5 +55,8 @@
                 <a href="https://sakazuki.herokuapp.com/"><img src="img/sakazuki.gif"></a>
             </div>
         </footer>
+        {% for javascript in page.custom-javascript-list %}
+            <script src="{{ javascript }}"></script>
+        {% endfor %}
     </body>
 </html>
