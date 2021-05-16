@@ -20,4 +20,5 @@ it’a rampaging fridge．狂ってる？それ、誉め言葉ね。
 なんつってる間に4時っすよ(笑)　あ～あ、義務教育の辛いとこね、これ
 
 相互リンク歓迎！こちらのバナーをご利用ください↓
+
 <a href="https://rampaging-fridge.github.io/index.html"><img src="img/reizouko-banner.gif"></a>
