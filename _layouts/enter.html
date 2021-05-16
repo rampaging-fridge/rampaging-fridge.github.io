@@ -16,27 +16,6 @@
             <marquee behavior="alternate" id="welcome">暴走冷蔵庫へようこそ</marquee>
         </header>
         <div id="container">
-            <nav>
-                <ul id="menu">
-                    <li>
-                        <a href="./index.html">■</a>
-                        <a href="./page1.html">■</a>
-                        <a href="./page2.html">■</a>
-                        <a href="./page3.html">■</a>
-                        <a href="./page4.html">■</a>
-                    </li>
-                </ul>
-                <div>以下18禁</div>
-                <ul id="menu">
-                    <li>
-                        <a href="./r18-1.html">□</a>
-                        <a href="./r18-2.html">□</a>
-                        <a href="./r18-3.html">□</a>
-                        <a href="./r18-4.html">□</a>
-                        <a href="./r18-5.html">□</a>
-                    </li>
-                </ul>
-            </nav>
             <main>
                 {{ content }}
             </main>
@@ -50,10 +29,6 @@
             人目のお客様です
 
             <p><a href="https://github.com/rampaging-fridge/rampaging-fridge.github.io">設計図共有サイトギフハブ</a></p>
-            <div id="links">
-                <a href="https://www.nicovideo.jp/user/9266146"><img src="img/djmonad.gif"></a>
-                <a href="https://sakazuki.herokuapp.com/"><img src="img/sakazuki.gif"></a>
-            </div>
         </footer>
         {% for javascript in page.custom-javascript-list %}
             <script src="{{ javascript }}"></script>
