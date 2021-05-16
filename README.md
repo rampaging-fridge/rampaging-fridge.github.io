@@ -1,14 +1,27 @@
 # rampaging-fridge.github.io
+
 暴走冷蔵庫の個人サイトです。
 
-# requirement
+## How to run locally with Docker
 
-* docker(https://www.docker.com/)
+### requirement
 
-# build
+- docker (<https://www.docker.com/>)
 
-```
-$ docker compose up
-```
+### build
 
-http://localhost:4000/
+- run by `docker compose up`
+- access to <http://localhost:4000/>
+
+## How to run locally with Ruby
+
+### requirement
+
+- Ruby (<https://www.ruby-lang.org/>)
+- Bundler (<https://bundler.io/>)
+
+### build
+
+- install jekyll by `bundle install` on repository root
+- run by `bundle exec jekyll server`
+- access to <http://localhost:4000/>
