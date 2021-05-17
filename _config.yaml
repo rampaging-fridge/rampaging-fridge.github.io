@@ -1,0 +1,10 @@
+exclude:
+  - .git
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - _config.yaml
+  - _layouts
+  - params.json
+  - vendor
+  - README.md
