@@ -1,13 +1,5 @@
 exclude:
-  - .git
-  - .bundle
-  - .editorconfig
-  - .gitignore
   - Gemfile
   - Gemfile.lock
-  - _config.yaml
-  - _layouts
   - README.md
   - docker-compose.yaml
-  - \#
-
