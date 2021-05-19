@@ -5,8 +5,9 @@ services:
     command: jekyll serve --livereload
     volumes:
       - .:/srv/jekyll:cached
-      - /srv/jekyll/.git        # exclude
-      - /srv/jekyll/_site       # exclude
+    tmpfs:
+      - /srv/jekyll/.git
+      - /srv/jekyll/_site
     ports:
       - 4000:4000
       - 35729:35729
