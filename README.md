@@ -23,5 +23,5 @@
 ### build
 
 - install jekyll by `bundle install` on repository root
-- run by `bundle exec jekyll server`
+- run by `bundle exec jekyll server --livereload`
 - access to <http://localhost:4000/>
