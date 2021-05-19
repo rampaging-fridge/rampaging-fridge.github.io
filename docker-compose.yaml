@@ -4,7 +4,9 @@ services:
     image: jekyll/jekyll:pages
     command: jekyll serve --livereload
     volumes:
-      - $PWD:/srv/jekyll
+      - .:/srv/jekyll:cached
+      - /srv/jekyll/.git        # exclude
+      - /srv/jekyll/_site       # exclude
     ports:
       - 4000:4000
       - 35729:35729
