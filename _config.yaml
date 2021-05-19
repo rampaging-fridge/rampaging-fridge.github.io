@@ -1,8 +1,4 @@
 exclude:
-  - .git
-  - .bundle
-  - .editorconfig
-  - .gitignore
   - Gemfile
   - Gemfile.lock
   - _config.yaml
@@ -10,4 +6,3 @@ exclude:
   - README.md
   - docker-compose.yaml
   - \#
-
