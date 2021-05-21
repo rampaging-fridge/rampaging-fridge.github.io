@@ -1,9 +1,9 @@
-(function(){
+function playSound(url){
     const context = new AudioContext();
     const buffer = null;
     const source = context.createBufferSource();
     const request = new XMLHttpRequest();
-    request.open('GET', 'tamahome.mp3', true);
+    request.open('GET', url, true);
     request.responseType = 'arraybuffer';
     request.send();
     
@@ -16,4 +16,4 @@
     source.connect(context.destination);
     source.start(0);
     
-})();
+}

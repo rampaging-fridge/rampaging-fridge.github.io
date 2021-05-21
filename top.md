@@ -1,6 +1,6 @@
 ---
 title: トップページ
-custom-javascript-list: [music.js]
+custom-javascript: playSound("sounds/chunchun_heaven.mp3")
 ---
 
 初カキコ…ども…

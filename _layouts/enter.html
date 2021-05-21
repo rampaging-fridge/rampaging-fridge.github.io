@@ -19,6 +19,7 @@
         <meta property="og:description" content="a.k.a. 狂人の宴">
         <meta property="og:site_name" content="暴走冷蔵庫">
         <meta property="og:image" content="/img/logo-large.png">
+        <script src="/js/common.js"></script>
     </head>
     <body>
         <header>
@@ -38,8 +39,6 @@
 
             <p><a href="https://github.com/rampaging-fridge/rampaging-fridge.github.io">設計図共有サイトギフハブ</a></p>
         </footer>
-        {% for javascript in page.custom-javascript-list %}
-            <script src="{{ javascript }}"></script>
-        {% endfor %}
+        <script>{{ page.custom-javascript }}</script>
     </body>
 </html>

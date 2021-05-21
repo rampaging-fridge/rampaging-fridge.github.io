@@ -3,6 +3,9 @@
         <meta charset="utf-8">
         <title>{{ page.title }} - 暴走冷蔵庫</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        {% for url in page.custom-stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ url }}">
+        {% endfor %}
         <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/icon/favicon-16x16.png">
@@ -16,6 +19,7 @@
         <meta property="og:description" content="a.k.a. 狂人の宴">
         <meta property="og:site_name" content="暴走冷蔵庫">
         <meta property="og:image" content="/img/logo-large.png">
+        <script src="/js/common.js"></script>
     </head>
     <body>
         <header>
@@ -66,8 +70,6 @@
                 <a href="https://sakazuki.herokuapp.com/"><img src="img/sakazuki.gif"></a>
             </div>
         </footer>
-        {% for javascript in page.custom-javascript-list %}
-            <script src="{{ javascript }}"></script>
-        {% endfor %}
+        <script>{{ page.custom-javascript }}</script>
     </body>
 </html>
